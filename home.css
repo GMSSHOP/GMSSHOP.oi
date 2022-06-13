@@ -1,5 +1,5 @@
 body{
-    background-color:white;
+    background-color: rgba(255, 217, 0, 0.556);
 }
 h1{
     font-style: italic;
@@ -26,7 +26,7 @@ nav{
     text-align: center;
     align-items: center;
     font-size: 15px;
-    background-color: rgb(109, 109, 173);
+    background-color: rgb(94, 94, 227);
     border: 1px;
     border: solid;
     border-radius: 20px;
@@ -69,7 +69,7 @@ h2{
     font-style: italic;
     text-align: center;
     color: rgb(16, 11, 11);
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -107,7 +107,8 @@ section a:hover{
     color: black;
     font-size: 25px;
 }
-.story{padding: 0%;
+.story{
+    padding: 0%;
     border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
