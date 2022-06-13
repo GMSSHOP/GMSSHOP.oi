@@ -75,7 +75,7 @@ h2{
 }
 section div{
     height: 300px;
-    width: 160px;
+    width: 165px;
     background-color: bisque;
     text-align: center;
     border: 1px;
@@ -93,6 +93,7 @@ img{
     border-radius: 20px;
     border: 1px;
     border: solid;
+    border-color: aliceblue;
 }
 section div p{
     color: black;
