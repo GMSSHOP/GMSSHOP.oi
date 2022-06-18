@@ -22,10 +22,27 @@
     </nav>
     <!--menu-->
     <menu>
-            <a class="categories" href=""><i class="fa-solid fa-book-open"></i>Catégories</a>
-            <a class="nos agences " href=""><i class="fa-solid fa-location-dot"></i>Nos agences</a>
-            <a class="horloge" href=""><i class="fa-solid fa-clock"></i>Horloge</a>
-            <a class="parametre" href=""><i class="fa-solid fa-gear"></i>Parametre</a>
+        <div class="uncontainer">
+            <a class="click">Categories</a>
+            <div class="list">
+                <button class="links">link1</button>
+                <button class="links">link2</button>
+                <button class="links">link3</button>
+                <button class="links">link4</button>
+                <button class="links">link5</button>
+            </div>
+            </div>
+            <script>
+                let click = document.querySelector('.click');
+                let list = document.querySelector('.list');
+                click.addEventListener("click",()=>{
+                    list.classList.toggle('newlist');
+                });
+                  
+            </script>
+            <a href="/Users/seydoukaramokosacko/Documents/GitHub/GMSSHOP.oi/horloge.html">Horloge</a>
+            <a href="">Nos agences</a>
+            <a href="">Parametre</a>
     </menu>
     <h2>Voir nos produits</h2>
     <!--barre de recherche-->
@@ -236,20 +253,10 @@
         </div>
     </section>
     <footer>
-        <div class="apropos">
-            <h4>A propos</h4>
-            <p>C'est site web a été créer le .... /...../2022</p>
-            <p>Par un jeune developpeur mali <span>Seydou K Sacko</span></p>
-        </div>
-        <div class="version">
-            <p>version 1.0</p>
-        </div>
-        <div class="remerciement">
-            <h4>Remerciement</h4>
-
-        </div>
+        <div class="apropos">Apropos</div>
+        <div class="version">Version</div>
+        <div class="remerciement">Remerciement</div>
     </footer>
- 
 </body>
 </body>
 </body>

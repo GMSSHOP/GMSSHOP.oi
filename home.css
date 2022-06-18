@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(255, 217, 0, 0.556);
+    background-color: rgba(237, 203, 13, 0.96);
 }
 h1{
     font-style: italic;
@@ -20,17 +20,17 @@ h1{
     color: red;
 }
 nav{
+    width: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     align-items: center;
     font-size: 15px;
-    background-color: rgb(94, 94, 227);
+    background-color: rgb(160, 157, 83);
     border: 1px;
-    border: solid;
+    border: none;
     border-radius: 20px;
-    border-color: rgb(62, 62, 69);
 
 }
 nav a{
@@ -39,7 +39,7 @@ nav a{
 }
 nav a:hover{
     color: red;
-    font-size: 17px;
+    font-size: 18px;
 }
 /*Barre de chegerche */
 input{
@@ -141,40 +141,87 @@ section{
     justify-content: space-around;
     flex-wrap: wrap;
 }
-menu{
+/*menu{
     margin: auto;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     font-size: 15px;
-    justify-content: space-between;
+    justify-content: space-around;
     border: 1px;
-    border: solid;
+    border: none;
     border-radius: 20px;
-    background-color: rgb(54, 52, 49);
+    width: auto;
+    background-color: rgb(84, 80, 24);
 }
 menu a{
     text-decoration: none;
     color: white;
+}*/
+footer{
+   width: auto;
+   height: 150px;
+   background-color: rgb(208, 204, 91);
+   border: none;
+   border-radius: 20px;
+   display: flex;
+   justify-content: space-around;
+   color: rgb(128, 132, 135);
+   font-size: 15px;
+}
+
+menu{
+    background-color: rgba(255, 255, 0, 0.549);
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    bottom: auto;
+}
+/* C est container 1*/
+.uncontainer{
+}
+.click{
+    border: none;
+}
+.click:hover{
+}
+click,.links{
+    padding: 12px;
+    font-size: 1.2em;
+    font-family: futura Md BT;
+    border: none;
+    outline: none;
+    width: 100px;
+    color: rgb(239, 195, 137);
+    transition: 0.3s;
+}
+.list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+.newlist{
+    transform: scaleY(1);
+}
+.links{
+    background-color: darkslategray;
+}
+.links:hover{
+    background-color: blue;
+    transform: scale(1.1);
+    
+}
+
+menu a{
+    text-decoration: none;
+    color: black;
 }
 menu a:hover{
     transform: scale(1.1);
     color: red;
-}
-footer{
-    display: flex;
-    justify-content: space-between;
-    top: auto;
-    margin-bottom: auto;
-    border: 1px;
-    border: solid;
-}
-h4{
-    text-decoration: underline;
-    font-size: 20px;
-}
-span{
-    font-size: 20px;
-    color: red;
-    text-decoration: underline;
 }
