@@ -75,7 +75,7 @@ h2{
 }
 section div{
     height: 300px;
-    width: 165px;
+    width: 125px;
     background-color: bisque;
     text-align: center;
     border: 1px;
@@ -187,7 +187,7 @@ menu{
 .click:hover{
 }
 click,.links{
-    padding: 12px;
+    padding: 10px;
     font-size: 1.2em;
     font-family: futura Md BT;
     border: none;
@@ -209,6 +209,9 @@ click,.links{
     transform: scaleY(1);
 }
 .links{
+    text-align: center;
+    font-size: 15px;
+    border-radius: 20px;
     background-color: darkslategray;
 }
 .links:hover{
