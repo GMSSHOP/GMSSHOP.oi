@@ -25,23 +25,40 @@
         <div class="uncontainer">
             <a class="click"><i class="fa-solid fa-book"></i>Categories</a>
             <div class="list">
-                <a href="" class="links">Telephones et Accessoires</a>
-                <a href="" class="links">Ordinateurs</a>
-                <a href="" class="links">Sonorisations</a>
-                <a href="" class="links">Montres</a>
-                <a href="" class="links">link5</a>
+                <a href="/Users/seydoukaramokosacko/Documents/GitHub/GMSSHOP.oi/page de telephone.html" class="links">Telephones et Accessoires</a>
+                <a href="/Users/seydoukaramokosacko/Documents/GitHub/GMSSHOP.oi/page d ordinateur.html" class="links">Ordinateurs</a>
+                <a href="/Users/seydoukaramokosacko/Documents/GitHub/GMSSHOP.oi/page de sonorisation.html" class="links">Sonorisations</a>
+                <a href="/Users/seydoukaramokosacko/Documents/GitHub/GMSSHOP.oi/page de montre.html" class="links">Montres</a>
+               <!--- <a href="" class="links">link5</a>-->
             </div>
             </div>
             <script>
-                let click = document.querySelector('.click');
-                let list = document.querySelector('.list');
-                click.addEventListener("click",()=>{
-                    list.classList.toggle('newlist');
+                let clickCategories = document.querySelector('.click');
+                let listCategories = document.querySelector('.list');
+                clickCategories.addEventListener("click",()=>{
+                    listCategories.classList.toggle('newlist');
                 });
                   
             </script>
+            <div class="deuxcontainer">
+                <button class="clickAgences" href=""><i class="fa-solid fa-map-location"></i>Nos agences</button>
+                <div class="page">
+                    <h3>Boutique N°1</h3>
+                    <p class=""></p>
+                    <h3>Boutique N°2</h3>
+                    <p class=""></p>
+                    <h3>Boutique N°3</h3>
+                    <p class=""></p>
+                </div>
+            </div>
+            <script>
+                let clickAgences = document.querySelector('.clickAgences');
+                let pageAgences = document.querySelector('.page');
+                clickAgences.addEventListener("click",()=>{
+                    pageAgences.classList.toggle('newpage');
+                });
+            </script>
             <a href="/Users/seydoukaramokosacko/Documents/GitHub/GMSSHOP.oi/horloge.html"><i class="fa-solid fa-clock"></i>Horloge</a>
-            <a href=""><i class="fa-solid fa-map-location"></i>Nos agences</a>
             <a href=""><i class="fa-solid fa-gear"></i>Parametre</a>
     </menu>
     <h2>Voir nos produits</h2>

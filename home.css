@@ -186,7 +186,7 @@ menu{
 }
 .click:hover{
 }
-click,.links{
+clickCategories,.links{
     padding: 10px;
     font-size: 1.2em;
     font-family: futura Md BT;
@@ -227,4 +227,44 @@ menu a{
 menu a:hover{
     transform: scale(1.1);
     color: red;
+}
+
+.deuxcontainer{
+}
+.clickAgences{
+    border: none;
+    background-color: yellow;
+    color: black;
+
+}
+.clickAgences:hover{
+}
+clickAgences,.links1{
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: futura Md BT;
+    border: none;
+    outline: none;
+    width: 100px;
+    color: rgb(239, 195, 137);
+    transition: 0.3s;
+}
+.page{
+    width: 250px;
+    height: 200px;
+    background-color: rgb(176, 172, 167);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+.newpage{
+    transform: scaleY(2);
+}
+h3{
+    font-size: 15px;
 }
