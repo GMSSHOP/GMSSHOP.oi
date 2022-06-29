@@ -63,16 +63,10 @@
     </menu>
     <h2>Voir nos produits</h2>
     <!--barre de recherche-->
-    <input type="search" placeholder="Recherche ici" name="" id="search" value="" onchange="ouvrirpage()">
-    <button onclick="ouvrirpage()"> search </button>
-    <script type="text/javascript">
-        function ouvrirpagr(){
-
-            var a = document.getElementById("search").value;
-            if(a === "")
-              window.open("")
-        }
-    </script>
+    <form>
+        <input type="text" name="" id="search-item" placeholder="Rechercher vos produits"
+        onkeyup="search()">
+    </form>
     <!--les story-->
     <section class="story">
         <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
@@ -82,7 +76,7 @@
         <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
         <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
     </section>
-    <!--les sections de produit-->
+    <!--les sections de produit
     <section>
         <div>
             <img src='http://fakeimg.pl/100x100?font=lobster'" alt=''/>
@@ -268,11 +262,50 @@
             <a href=""><i class="fa-brands fa-instagram"></i></a>
             <a href=""><i class="fa-brands fa-tiktok"></i></a>
         </div>
+    </section>-->
+    <section class="container">
+        <div class="product-list" id="product-list">
+
+            <div class="product">
+                <img src="http://fakeimg.pl/100x100?font=lobster" alt="">
+                    <h3>Lorem, ipsum.</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nam!</h4>
+                    <a href=""><i class="fa-regular fa-at"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
     </section>
-    <footer>
-        <div class="apropos">Apropos<p>j ai creer un cet site web pour develloper son commerce</p></div>
-        <div class="version">Version <p> 1.0 2022</p></div>
-        <div class="remerciement">Remerciement <p>j ai remercie tout les personne qui ma aider </p> </div>
+    <script>
+        const search = () => {
+            const searchbox = document.getElementById("search-item").value.toUpperCase();
+            const storeitems = document.getElementById("product-list")
+            const product = document.querySelectorAll(".product")
+            const pname = storeitems.getElementsByTagName("h3")
+            for (var i = 0; i < pname.length; i++){
+                let match = product[i].getElementsByTagName{'h3'}[0];
+                if (match){
+                    let textvalue = match.textContent || match.innerHTML
+                    if (textvalue.toUpperCase().indexOf(searchbox)> -1) {
+                        product[i].style.display = "";
+                    } else {
+                        product[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+   <footer>
+        <div class="apropos">Apropos<p>j ai creer un cet site web pour develloper son commerce</p>
+            
+        </div>
+        <div class="version">Version <p> 1.0 2022</p>
+
+        </div>
+        <div class="remerciement">Remerciement <p>j ai remercie tout les personne qui ma aider </p> 
+
+        </div>
     </footer>
 </body>
 </body>

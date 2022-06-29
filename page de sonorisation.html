@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="soonorisation.css">
+    <script src="https://kit.fontawesome.com/889dacf975.js" crossorigin="anonymous"></script>
     <title>page de sonorisation</title>
 </head>
 <body>
@@ -13,265 +14,43 @@
     </header>
     <h2>Voir les Meilleurs Sonorisations</h2>
     <!--barre de recherche-->
-    <input type="search" placeholder="Recherche ici" name="" id="search" value="" onchange="ouvrirpage()">
-    <button onclick="ouvrirpage()"> search </button>
-    <script type="text/javascript">
-        function ouvrirpagr(){
+    <form>
+        <input type="text" name="" id="search-item" placeholder="Rechercher vos produits"
+        onkeyup="search()">
+    </form>
+     <!--les sections de produit-->
+     <section class="container">
+        <div class="product-list" id="product-list">
 
-            var a = document.getElementById("search").value;
-            if(a === "")
-              window.open("")
+            <div class="product">
+                <img src="http://fakeimg.pl/100x100?font=lobster" alt="">
+                    <h3>Lorem, ipsum.</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, nam!</h4>
+                    <a href=""><i class="fa-regular fa-at"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+     <script>
+        const search = () => {
+            const searchbox = document.getElementById("search-item").value.toUpperCase();
+            const storeitems = document.getElementById("product-list")
+            const product = document.querySelectorAll(".product")
+            const pname = storeitems.getElementsByTagName("h3")
+            for (var i = 0; i < pname.length; i++){
+                let match = product[i].getElementsByTagName{'h3'}[0];
+                if (match){
+                    let textvalue = match.textContent || match.innerHTML
+                    if (textvalue.toUpperCase().indexOf(searchbox)> -1) {
+                        product[i].style.display = "";
+                    } else {
+                        product[i].style.display = "none";
+                    }
+                }
+            }
         }
     </script>
-     <!--les sections de produit-->
-     <section>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster'" alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-    </section>
-    <section>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster'" alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-    </section>
-    <section>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster'" alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-    </section>
-    <section>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster'" alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-        <div>
-            <img src='http://fakeimg.pl/100x100?font=lobster' alt=''/>
-            <h3>Lorem, ipsum.</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href=""><i class="fa-regular fa-at"></i></a>
-            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-tiktok"></i></a>
-        </div>
-    </section>
-    
 </body>
 </html>

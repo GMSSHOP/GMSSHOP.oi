@@ -1,0 +1,37 @@
+body{
+    background-color: rgb(241, 239, 236);
+}
+header{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: center;
+}
+img{
+    width: 400px;
+    height: 400px;
+}
+footer{
+    padding: 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    text-align: center;
+}
+h2{
+    font-size: 15px;
+}
+a{
+    font-size: 30px;
+    text-decoration: none;
+    border: 1px;
+    border: solid;
+    color: black;
+    background-color: rgb(0, 157, 255);
+    border-radius: 10px;
+}
+a:hover{
+    color: red;
+    background-color: rgb(9, 69, 118);
+}
